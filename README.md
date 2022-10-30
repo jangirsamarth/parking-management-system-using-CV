@@ -2,19 +2,31 @@
 
 FIRST READ ALL OF THE INSTRUCTION THEN WORK ACCORDINGLY 
 
-first install cv, cv2, cvzone, pytessract, MySQL, pillow, any compiler (priferably Intellij) 
+There are a few modules that are to be downloaded before hand. For the usage of the project namely: 
+  cv
+  cv2
+  cvzone
+  pytessract
+  MySQL
+  pillow
+  Any compiler (priferably Intellij)
+
+
 now you have to create 2 diferent folders 
-one for paring space detection 
-and one for entry and exit billing system 
+  The first one is for the detection of the spaces in the parking alot.
+    This is done according to the markings on the parking space.
+  The second one is for the number plate detection and other things namely:
+    1. entry - exit time
+    2. billing according to the time for which the car was parked
 
 now put main.py and parking_space_detector_2.py in 1st folder and name it parking space detector
 
 now put entry_detector.py and exit_detector.py in second folder and name it billing system 
-  now install pytessract in this folder together with entry_detector.py and exit_detector.py as codes will only run when it is installed this way 
+  now install pytessract in the **same folder as entry_detector.py and exit_detector.py**, as codes will only run when it is installed this way 
   
 now setup MySQL and change your password in entry_detector.py and exit_detector.py 
 
-make sure to install all the libraries required 
+make sure to install all the required libraries
 give a video feed to main.py and take a proper screenshot from the video feed and use it in parking_space_detector_2.py
 
 run the parking_space_detector_2.py and care fully make the windows (boxes) in which parking space will be detected 
