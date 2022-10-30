@@ -34,7 +34,7 @@ you can change the size of boxes in the code and after many trial and error you 
 
 now make sure to put exact same dimensions of boxes in main.py and run it to see the efficency of parking space detection 
 
-make sure to connect the database by MySQL connector 
+make sure to connect the database by MySQL connector
 
 
 import SQL files given into the MySQL workbench and name the database smps 
