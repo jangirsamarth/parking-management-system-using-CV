@@ -1,49 +1,93 @@
-# parking-management-system-using-CV
+🚗 Parking Management System Using Computer Vision 🅿️
+Table of Contents
+Introduction
+Features
+Technologies Used
+Installation
+Usage
+Project Structure
+Contributing
+License
+Contact
+Introduction
+The Parking Management System Using Computer Vision leverages advanced computer vision and machine learning techniques to automate the detection and tracking of vehicles in parking spaces. This system streamlines parking management, reduces human error, and enhances the overall efficiency of parking facilities.
 
-FIRST READ ALL OF THE INSTRUCTION THEN WORK ACCORDINGLY 
+Features
+Automated Number Plate Recognition (ANPR): Detects and reads vehicle number plates using OCR.
+Real-time Tracking: Monitors vehicle entry and exit times.
+Database Integration: Stores and manages parking data in a MySQL database.
+Cost Calculation: Computes the parking fee based on the duration of stay.
+User-Friendly Interface: Displays real-time video feed and processing steps.
+Technologies Used
+Programming Languages: Python
+Computer Vision Libraries: OpenCV, cv2, cvzone
+OCR: pytesseract
+Database: MySQL
+Others: NumPy, pillow, re
+Installation
+Follow these steps to set up the Parking Management System on your local machine.
 
-There are a few modules that are to be downloaded before hand. For the usage of the project namely: 
-  cv
-  cv2
-  cvzone
-  pytessract
-  MySQL
-  pillow
-  Any compiler (priferably Intellij).
+Prerequisites
+Python 3.12 or higher
+MySQL
+VS code or any other preferred IDE
+Clone the Repository
+bash
+Copy code
+git clone https://github.com/jangirsamarth/parking-management-system-using-CV.git
+cd parking-management-system-using-CV
+Install Dependencies
+bash
+Copy code
+pip install opencv-python opencv-python-headless cvzone pytesseract mysql-connector-python pillow
+Project Structure
+Create two folders:
 
+parking_space_detector: For detection of parking spaces.
+Put main.py and parking_space_detector_2.py in this folder.
+billing_system: For number plate detection and other functions.
+Put entry_detector.py and exit_detector.py in this folder.
+Install pytesseract in the same folder as entry_detector.py and exit_detector.py as the codes will only run when it is installed this way.
+Configure the Database:
 
-Now you have to create 2 diferent folders. 
-  The first one is for the detection of the spaces in the parking alot.
-    This is done according to the markings on the parking space.
-  The second one is for the number plate detection and other things namely: 
-    
-    1. Entry - Exit time
-    2. Billing according to the time for which the car was parked.
+Setup MySQL and change your password in entry_detector.py and exit_detector.py.
+Import SQL files into the MySQL workbench and name the database smps.
+Links for Dependencies
+pytesseract
+MySQL
+IntelliJ IDEA
+Usage
+Video Feed Setup:
 
-Now put main.py and parking_space_detector_2.py in 1st folder and name it parking space detector.
+Give a video feed to main.py and take a proper screenshot from the video feed to use in parking_space_detector_2.py.
+Run the Parking Space Detector:
 
-Now put entry_detector.py and exit_detector.py in second folder and name it billing system. 
-  Now install pytessract in the **same folder as entry_detector.py and exit_detector.py**, as codes will only run when it is installed this way. 
-  
-Now setup MySQL and change your password in entry_detector.py and exit_detector.py 
+Execute parking_space_detector_2.py and carefully create the windows (boxes) in which parking space will be detected.
+Adjust the size of the boxes in the code through trial and error to achieve perfect boxes.
+Run the Main Script:
 
-Make sure to install all the required libraries.
-Give a video feed to main.py and take a proper screenshot from the video feed and use it in parking_space_detector_2.py
+Make sure to input the exact same dimensions of boxes in main.py.
+Run main.py to see the efficiency of parking space detection.
+Database Connection:
 
-Run the parking_space_detector_2.py and care fully make the windows (boxes) in which parking space will be detected. 
-You can change the size of boxes in the code and after many trial and error you can make perfect boxes. 
+Ensure the database is connected via MySQL connector.
+Run Entry and Exit Detectors:
 
-Now make sure to put exact same dimensions of boxes in main.py and run it to see the efficency of parking space detection. 
+Run entry_detector.py to detect vehicle entry.
+Run exit_detector.py to detect vehicle exit and calculate the parking fee.
+Contributing
+We welcome contributions to enhance the Parking Management System. To contribute, follow these steps:
 
-Make sure to connect the database by MySQL connector.
+Fork the repository.
+Create a new branch for your feature or bugfix.
+Make your changes and commit them.
+Push your changes to your fork.
+Create a pull request to the main repository.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
+Contact
+Feel free to reach out for any questions or collaborations:
 
-Import SQL files given into the MySQL workbench and name the database smps 
- Links :   pytessract - https://pypi.org/project/pytesseract/
-           MySQL - https://www.mysql.com/
-           IntelliJ - https://www.jetbrains.com/idea/
-         
-IF YOU HAVE ANY QUERY OR DOUBT I WILL BE MORE THAN HAPPY TO HELP TRY TO CONNECT WITH ME THROUGH MAIL OR LINKDIN 
-
-MAIL - samarth8947@gmail.com   
-LINKDIN - https://www.linkedin.com/in/samarth-jangir
+Email: samarth8947@gmail.com
+LinkedIn: Samarth Jangir
