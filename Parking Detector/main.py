@@ -4,7 +4,7 @@ import cvzone
 import numpy as np
 
 # Video feed
-cap = cv2.VideoCapture("parking-management-system-using-CV/Parking Detector/Car Parking.mp4")
+cap = cv2.VideoCapture("Parking Detector/Car Parking.mp4")
 
 with open('CarParkPos4', 'rb') as f:
     posList = pickle.load(f)
