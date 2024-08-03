@@ -1,39 +1,52 @@
-🚗 Parking Management System Using Computer Vision 🅿️
-Table of Contents
-Introduction
-Features
-Technologies Used
-Installation
-Usage
-Project Structure
-Contributing
-License
-Contact
-Introduction
-The Parking Management System Using Computer Vision leverages advanced computer vision and machine learning techniques to automate the detection and tracking of vehicles in parking spaces. This system streamlines parking management, reduces human error, and enhances the overall efficiency of parking facilities.
 
-Features
-Automated Number Plate Recognition (ANPR): Detects and reads vehicle number plates using OCR.
-Real-time Tracking: Monitors vehicle entry and exit times.
-Database Integration: Stores and manages parking data in a MySQL database.
-Cost Calculation: Computes the parking fee based on the duration of stay.
-User-Friendly Interface: Displays real-time video feed and processing steps.
-Technologies Used
-Programming Languages: Python
-Computer Vision Libraries: OpenCV, cv2, cvzone
-OCR: pytesseract
-Database: MySQL
-Others: NumPy, pillow, re
-Installation
+
+# 🚗 Parking Management System Using Computer Vision 🅿️
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+The **Parking Management System Using Computer Vision** leverages advanced computer vision and machine learning techniques to automate the detection and tracking of vehicles in parking spaces. This system streamlines parking management, reduces human error, and enhances the overall efficiency of parking facilities.
+
+## Features
+
+- **Automated Number Plate Recognition (ANPR)**: Detects and reads vehicle number plates using OCR.
+- **Real-time Tracking**: Monitors vehicle entry and exit times.
+- **Database Integration**: Stores and manages parking data in a MySQL database.
+- **Cost Calculation**: Computes the parking fee based on the duration of stay.
+- **User-Friendly Interface**: Displays real-time video feed and processing steps.
+
+## Technologies Used
+
+- **Programming Languages**: Python
+- **Computer Vision Libraries**: OpenCV, cv2, cvzone
+- **OCR**: pytesseract
+- **Database**: MySQL
+- **Others**: NumPy, pillow, re
+
+## Installation
+
 Follow these steps to set up the Parking Management System on your local machine.
 
-Prerequisites
-Python 3.12 or higher
-MySQL
-VS code or any other preferred IDE
-Clone the Repository
-bash
-Copy code
+### Prerequisites
+
+- Python 3.12 or higher
+- MySQL
+- IntelliJ IDEA or any other preferred IDE
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/jangirsamarth/parking-management-system-using-CV.git
 cd parking-management-system-using-CV
 Install Dependencies
