@@ -2,8 +2,7 @@ import pickle
 import cv2
 
 # SIZE OF BOX IN WHICH CAR IS
-width, height = 12, 60
-
+width,height=67,26
 try:
     with open('CarParkPos4', 'rb') as f:
         posList = pickle.load(f)
@@ -25,7 +24,7 @@ def mouseClick(events, x, y, flags, params):
 
 
 while True:
-    img = cv2.imread('car_parklot_2.jpeg')
+    img = cv2.imread('parking-management-system-using-CV/Parking Detector/Car Parking.png')
     for pos in posList:
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), (255, 0, 255), 2)
 

@@ -4,12 +4,12 @@ import cvzone
 import numpy as np
 
 # Video feed
-cap = cv2.VideoCapture("car park 2.mp4")
+cap = cv2.VideoCapture("parking-management-system-using-CV/Parking Detector/Car Parking.mp4")
 
 with open('CarParkPos4', 'rb') as f:
     posList = pickle.load(f)
 # SIZE OF BOX IN WHICH CAR IS
-width, height = 12, 60
+width,height=67,26
 
 
 def checkParkingSpace(imgPro):
@@ -22,7 +22,7 @@ def checkParkingSpace(imgPro):
         # cv2.imshow(str(x * y), imgCrop)
         count = cv2.countNonZero(imgCrop)
         # SETTING THE THRESHOLD LIMIT FOR BINARY IMAGE
-        if count < 90:
+        if count < 400:
             color = (0, 255, 0)
             thickness = 2
             spaceCounter += 1
@@ -53,6 +53,6 @@ while True:
 
     checkParkingSpace(imgDilate)
     cv2.imshow("Image", img)
-    cv2.imshow("ImageBlur", imgBlur)
-    cv2.imshow("ImageThres", imgMedian)
+    # cv2.imshow("ImageBlur", imgBlur)
+    # cv2.imshow("ImageThres", imgMedian)
     cv2.waitKey(10)

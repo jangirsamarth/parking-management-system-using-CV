@@ -21,7 +21,7 @@ mycursor = mydb.cursor()
 # reading image with help of cv2 library
 # image = cv2.imread('D8.jpeg')
 # image = cv2.imread('MH 12 DE 1433.jpg')
-image = cv2.imread('swift no palte.jpg')
+image = cv2.imread('Number Plate detection/d1.png')
 # resizing image
 image = imutils.resize(image, width=500)
 
