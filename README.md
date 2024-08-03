@@ -1,6 +1,4 @@
-Sure! Here's an elegant version of the README file:
 
-```markdown
 # 🚗 Parking Management System Using Computer Vision 🅿️
 
 ## Table of Contents
@@ -104,6 +102,4 @@ Feel free to reach out for any questions or collaborations:
 
 - **Email**: samarth8947@gmail.com
 - **LinkedIn**: [Samarth Jangir](https://www.linkedin.com/in/samarth-jangir)
-```
 
-This version of the README is more structured and visually appealing. You can copy and paste this content into your `README.md` file in your GitHub repository.
