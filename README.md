@@ -99,4 +99,3 @@ Feel free to reach out for any questions or collaborations:
 ---
 
 **Note:** For any queries or support, do not hesitate to contact me through the provided email or LinkedIn.
-```
