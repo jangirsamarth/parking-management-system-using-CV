@@ -1,6 +1,0 @@
-opencv-python-headless
-cvzone
-pytesseract
-mysql-connector-python
-pillow
-imutils
