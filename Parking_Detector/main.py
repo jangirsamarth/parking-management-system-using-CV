@@ -4,7 +4,7 @@ import cvzone
 import numpy as np
 
 # Video feed
-cap = cv2.VideoCapture("D:\Development\parking-management-system-using-CV\Parking Detector\Car Parking.mp4")
+cap = cv2.VideoCapture("Parking_Detector\Car Parking.mp4")
 
 # Load existing parking positions
 try:
