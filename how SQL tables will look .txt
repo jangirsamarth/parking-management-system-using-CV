@@ -1,0 +1,59 @@
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| spms               |
+| sys                |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use spms;
+Database changed
+mysql> show tables;
++----------------+
+| Tables_in_spms |
++----------------+
+| in_time        |
+| out_time       |
++----------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from in_time;
++--------------------------+-----------------+
+| in_time                  | car_number      |
++--------------------------+-----------------+
+| Wed Sep 27 23:55:00 2022 | 191 BH 2345 AA
+ |
++--------------------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql> select * from out_time;
++--------------------------+-----------------+
+| out_time                 | car_number      |
++--------------------------+-----------------+
+| Wed Sep 28 03:18:43 2022 | 191 BH 2345 AA
+ |
++--------------------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql>  select * from out_time;
++--------------------------+-----------------+
+| out_time                 | car_number      |
++--------------------------+-----------------+
+| Wed Sep 28 03:18:43 2022 | 191 BH 2345 AA
+ |
+| Wed Sep 28 03:41:37 2022 | 191 BH 2345 AA
+ |
+| Wed Sep 28 03:42:35 2022 | MH 12 DE 1433
+  |
++--------------------------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql>
+
